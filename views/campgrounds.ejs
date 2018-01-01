@@ -1,0 +1,12 @@
+<% include partials/header %>
+<div class="container">
+<header class="jumbotron"><h1>this is campground</h1>
+</header>
+  <% campgrounds.forEach(function(campground){ %>
+    <div>
+<h4>  <%=  campground.name %></h4>
+  <img src="<%= campground.image %>">
+</div>
+<%  }) %>
+</div>
+<% include partials/footer %>
