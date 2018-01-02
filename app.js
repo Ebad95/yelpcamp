@@ -28,4 +28,4 @@ app.get("/campgrounds/new",function(req,res){
 
 app.listen(3000,function(){
   console.log("yelpcamp has started")
-}):
+})
