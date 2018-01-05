@@ -11,7 +11,7 @@ var campgrounds=[
 
 app.get("/",function(req,res){
   res.render("landing")
-});
+})
 app.get("/campgrounds",function(req,res){
   res.render("campgrounds",{campgrounds:campgrounds})
 })
