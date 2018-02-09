@@ -1,8 +1,11 @@
 var express=require("express")
 var app=express();
 var bodyparser=require("body-parser");
+var mongoose=require("mongoose");
 app.use(bodyparser.urlencoded({extended:true}));
 app.set("view engine","ejs");
+
+mongoose.connect("mongodb://localhost/yelp_camp")
 var campgrounds=[
   {name:"salmon creek",image:"https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"},
   {name:"salmon creek",image:"https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=750&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D"},
